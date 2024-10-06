@@ -1,0 +1,180 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Chat Application
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-900 text-gray-200">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-1/4 bg-gray-800 p-6">
+    <div class="flex items-center mb-8">
+     <div class="text-2xl font-bold text-blue-400">
+      Globe IQ
+     </div>
+    </div>
+    <nav class="space-y-4">
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-tachometer-alt mr-3">
+      </i>
+      Dashboard
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-book mr-3">
+      </i>
+      Courses
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-user-graduate mr-3">
+      </i>
+      Students
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-comments mr-3">
+      </i>
+      Chats
+      <span class="ml-2 bg-blue-400 text-gray-900 text-xs rounded-full px-2 py-1">
+       1
+      </span>
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-file-invoice mr-3">
+      </i>
+      Mini Games
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-plug mr-3">
+      </i>
+      Observatory
+     </a>
+     <a class="flex items-center text-gray-400 hover:text-blue-400" href="#">
+      <i class="fas fa-newspaper mr-3">
+      </i>
+      Articles
+     </a>
+    </nav>
+
+    <div class="mt-8">
+     <a class="text-gray-400 hover:text-blue-400" href="#">
+                AI Tutor
+     </a>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-6 bg-gray-800 border-b border-gray-700">
+     <h1 class="text-xl font-semibold">
+      Community
+     </h1>
+     <div class="flex items-center">
+      <i class="fas fa-bell text-gray-400 mr-6">
+      </i>
+      <div class="flex items-center">
+       <span class="text-gray-400 mr-2">
+        Hi User!
+       </span>
+       <img alt="User avatar" class="w-10 h-10 rounded-full" src="https://placehold.co/40x40"/>
+      </div>
+     </div>
+    </div>
+    <!-- Chat Section -->
+    <div class="flex flex-1 overflow-hidden">
+     <!-- Chat List -->
+     <div class="w-1/3 bg-gray-800 border-r border-gray-700 overflow-y-auto">
+      <div class="p-4">
+       <input class="w-full p-2 border border-gray-600 bg-gray-700 text-gray-200 rounded-lg" placeholder="Search by name" type="text"/>
+      </div>
+      <div class="p-4">
+       <div class="space-y-4">
+        <div class="flex items-center">
+         <img alt="User avatar" class="w-10 h-10 rounded-full mr-3" src="https://placehold.co/40x40"/>
+         <div>
+          <div class="flex justify-between">
+           <span class="font-semibold">
+            Connection 1
+           </span>
+           <span class="text-gray-500 text-sm">
+            5min ago
+           </span>
+          </div>
+          <p class="text-gray-400">
+           Message
+          </p>
+         </div>
+        </div>
+        <div class="flex items-center">
+         <img alt="User avatar" class="w-10 h-10 rounded-full mr-3" src="https://placehold.co/40x40"/>
+         <div>
+          <div class="flex justify-between">
+           <span class="font-semibold">
+            Connection 2
+           </span>
+           <span class="text-gray-500 text-sm">
+            1hr ago
+           </span>
+          </div>
+          <p class="text-gray-400">
+          Message
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Chat Window -->
+     <div class="flex-1 flex flex-col">
+      <div class="flex items-center p-6 bg-gray-800 border-b border-gray-700">
+       <img alt="User avatar" class="w-10 h-10 rounded-full mr-3" src="https://placehold.co/40x40"/>
+       <div>
+        <div class="flex items-center">
+         <span class="font-semibold">
+          Connection 1
+         </span>
+         <span class="ml-2 text-green-400 text-sm">
+          Online
+         </span>
+        </div>
+        <span class="text-gray-500 text-sm">
+         @phoenix
+        </span>
+       </div>
+      </div>
+      <div class="flex-1 p-6 overflow-y-auto">
+       <div class="space-y-4">
+        <div class="flex">
+         <img alt="User avatar" class="w-10 h-10 rounded-full mr-3" src="https://placehold.co/40x40"/>
+         <div class="bg-gray-700 p-4 rounded-lg">
+          <p>
+           Message look like this
+          </p>
+         </div>
+        </div>
+        <div class="flex justify-end">
+         <div class="bg-blue-600 text-white p-4 rounded-lg">
+          <p>
+           Message looks like this
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="p-6 bg-gray-800 border-t border-gray-700">
+       <div class="flex items-center">
+        <input class="flex-1 p-2 border border-gray-600 bg-gray-700 text-gray-200 rounded-lg" placeholder="Type here..." type="text"/>
+        <button class="ml-4 bg-blue-600 text-white px-4 py-2 rounded-lg">
+         Send
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

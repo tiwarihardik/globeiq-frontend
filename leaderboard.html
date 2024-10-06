@@ -1,0 +1,496 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Leaderboard - Globe IQ
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="bg-gray-800 w-64 p-4 flex flex-col">
+    <div class="flex items-center mb-6">
+     <img alt="User profile picture" class="rounded-full w-10 h-10" src="https://placehold.co/40x40"/>
+     <div class="ml-3">
+      <p class="font-semibold">
+       User
+      </p>
+      <p class="text-gray-400 text-sm">
+       @TopPlayer
+      </p>
+     </div>
+    </div>
+    <nav class="flex-1">
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-tachometer-alt mr-3">
+        </i>
+        Dashboard
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-users mr-3">
+        </i>
+        Clubs
+       </a>
+      </li>
+     </ul>
+     <p class="text-gray-500 text-xs uppercase mb-2">
+      Favorite clubs
+     </p>
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-star mr-3">
+        </i>
+        Top players
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-graduation-cap mr-3">
+        </i>
+        Globe IQ Academy
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-skull-crossbones mr-3">
+        </i>
+        Rampage
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div class="mt-auto">
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-cog mr-3">
+        </i>
+        Settings
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-user-plus mr-3">
+        </i>
+        Invitations
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-question-circle mr-3">
+        </i>
+        Request feature
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-life-ring mr-3">
+        </i>
+        Get help
+       </a>
+      </li>
+      <li>
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-bug mr-3">
+        </i>
+        Report bug
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h1 class="text-2xl font-semibold">
+      Globe IQ - The Globe Protocols Academy
+     </h1>
+     <div class="flex items-center space-x-4">
+      <button class="bg-gray-700 text-white px-4 py-2 rounded">
+       Upgrade my data
+      </button>
+      <button class="bg-gray-700 text-white px-4 py-2 rounded">
+       Edit club
+      </button>
+      <button class="bg-orange-500 text-white px-4 py-2 rounded">
+       Invite friends
+      </button>
+     </div>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-lg mb-6">
+     <div class="flex justify-between items-center mb-4">
+      <div class="flex space-x-4">
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        24h
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        7D
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        30D
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        Global
+       </button>
+      </div>
+      <div class="flex space-x-4">
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        Rank
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        Win Rate
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        GIQ
+       </button>
+      </div>
+      <div class="flex space-x-4">
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        Queue
+       </button>
+       <button class="bg-gray-700 text-white px-4 py-2 rounded">
+        Show my Country
+       </button>
+      </div>
+     </div>
+     <div class="grid grid-cols-3 gap-4 mb-6">
+      <div class="bg-gray-700 p-4 rounded-lg">
+       <div class="flex items-center mb-2">
+        <img alt="Player profile picture" class="rounded-full w-10 h-10" src="https://placehold.co/40x40"/>
+        <div class="ml-3">
+         <p class="font-semibold">
+          BabyKnight
+         </p>
+         <p class="text-yellow-500">
+          Challenger
+         </p>
+        </div>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Local stats
+        </p>
+        <p>
+         42 - 21
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Accuracy
+        </p>
+        <p>
+         64%
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         GIQ
+        </p>
+        <p>
+         1.23
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-700 p-4 rounded-lg">
+       <div class="flex items-center mb-2">
+        <img alt="Player profile picture" class="rounded-full w-10 h-10" src="https://placehold.co/40x40"/>
+        <div class="ml-3">
+         <p class="font-semibold">
+          Rootless
+         </p>
+         <p class="text-gray-400">
+          Challenger
+         </p>
+        </div>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Local stats
+        </p>
+        <p>
+         42 - 21
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Accuracy
+        </p>
+        <p>
+         64%
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         GIQ
+        </p>
+        <p>
+         1.23
+        </p>
+       </div>
+      </div>
+      <div class="bg-gray-700 p-4 rounded-lg">
+       <div class="flex items-center mb-2">
+        <img alt="Player profile picture" class="rounded-full w-10 h-10" src="https://placehold.co/40x40"/>
+        <div class="ml-3">
+         <p class="font-semibold">
+          Teodorr2000
+         </p>
+         <p class="text-green-500">
+          Challenger
+         </p>
+        </div>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Local stats
+        </p>
+        <p>
+         42 - 21
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         Accuracy
+        </p>
+        <p>
+         64%
+        </p>
+       </div>
+       <div class="flex justify-between text-gray-400">
+        <p>
+         GIQ
+        </p>
+        <p>
+         1.23
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-700 p-4 rounded-lg">
+      <table class="w-full text-left">
+       <thead>
+        <tr class="text-gray-400">
+         <th class="py-2">
+          Place
+         </th>
+         <th class="py-2">
+          Player name
+         </th>
+         <th class="py-2">
+          Local stats
+         </th>
+         <th class="py-2">
+          Accuracy
+         </th>
+         <th class="py-2">
+          GIQ
+         </th>
+         <th class="py-2">
+          Rank
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr class="border-b border-gray-600 bg-gray-400 ">
+         <td class="py-2">
+          4
+         </td>
+         <td class="py-2">
+          User
+         </td>
+         <td class="py-2">
+          42 - 21
+         </td>
+         <td class="py-2">
+          64%
+         </td>
+         <td class="py-2">
+          1.23
+         </td>
+         <td class="py-2 text-yellow-500">
+          Challenger
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          5
+         </td>
+         <td class="py-2">
+          User
+         </td>
+         <td class="py-2">
+          42 - 21
+         </td>
+         <td class="py-2">
+          64%
+         </td>
+         <td class="py-2">
+          1.23
+         </td>
+         <td class="py-2 text-yellow-500">
+          Challenger
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          6
+         </td>
+         <td class="py-2">
+          FlyWithMe
+         </td>
+         <td class="py-2">
+          42 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-yellow-500">
+          Challenger
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          7
+         </td>
+         <td class="py-2">
+          BigBobo07
+         </td>
+         <td class="py-2">
+          42 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-purple-500">
+          Grandmaster
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          8
+         </td>
+         <td class="py-2">
+          Pudge
+         </td>
+         <td class="py-2">
+          42 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-red-500">
+          Master
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          9
+         </td>
+         <td class="py-2">
+          n0nameplayer
+         </td>
+         <td class="py-2">
+          12 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-red-500">
+          Master
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          10
+         </td>
+         <td class="py-2">
+          n0nameplayer
+         </td>
+         <td class="py-2">
+          12 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-red-500">
+          Master
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          11
+         </td>
+         <td class="py-2">
+          Kimberly Mastrangelo
+         </td>
+         <td class="py-2">
+          12 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-yellow-500">
+          Gold
+         </td>
+        </tr>
+        <tr class="border-b border-gray-600">
+         <td class="py-2">
+          12
+         </td>
+         <td class="py-2">
+          Kimberly Mastrangelo
+         </td>
+         <td class="py-2">
+          12 - 21
+         </td>
+         <td class="py-2">
+          49%
+         </td>
+         <td class="py-2">
+          5.23
+         </td>
+         <td class="py-2 text-yellow-500">
+          Gold
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
